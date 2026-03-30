@@ -1,5 +1,20 @@
+# Файлы сборки
 bin/
 obj/
+
+# Настройки Visual Studio
+.vs/
 *.user
 *.suo
-.vs/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Файлы среды разработки
+*.cache
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+test/
