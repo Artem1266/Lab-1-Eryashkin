@@ -1,7 +1,18 @@
-﻿Console.Write("Введите строку: ");
-string input = Console.ReadLine();
+﻿using ConsoleApp.Modules;
 
-char[] arr = input.ToCharArray();
-Array.Reverse(arr);
+class Program
+{
+    static void Main(string[] args)
+    {
+        int n = InputModule.ReadInt("Введите число: ");
 
-Console.WriteLine(new string(arr));
+        if (ValidationModule.IsValidNumber(n, 1, 20))
+        {
+            ProcessingModule.PrintSquare(n);
+        }
+        else
+        {
+            Console.WriteLine("Ошибка: число вне диапазона");
+        }
+    }
+}
